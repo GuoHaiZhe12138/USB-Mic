@@ -33,7 +33,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE END PV */
-
+extern void uart2_print(const char *str);
 /** @addtogroup STM32_USB_OTG_DEVICE_LIBRARY
   * @brief Usb device library.
   * @{
@@ -152,6 +152,7 @@ USBD_AUDIO_ItfTypeDef USBD_AUDIO_fops_FS =
   */
 static int8_t AUDIO_Init_FS(uint32_t AudioFreq, uint32_t Volume, uint32_t options)
 {
+	uart2_print("AUDIO_Init_FS_IN");
   /* USER CODE BEGIN 0 */
   UNUSED(AudioFreq);
   UNUSED(Volume);
@@ -182,6 +183,7 @@ static int8_t AUDIO_DeInit_FS(uint32_t options)
   */
 static int8_t AUDIO_AudioCmd_FS(uint8_t* pbuf, uint32_t size, uint8_t cmd)
 {
+	uart2_print("AUDIO_AudioCmd_FS_IN");
   /* USER CODE BEGIN 2 */
   switch(cmd)
   {
@@ -231,6 +233,7 @@ static int8_t AUDIO_MuteCtl_FS(uint8_t cmd)
   */
 static int8_t AUDIO_PeriodicTC_FS(uint8_t cmd)
 {
+	uart2_print("AUDIO_PeriodicTC_FS_In\r\n");
   /* USER CODE BEGIN 5 */
   UNUSED(cmd);
   return (USBD_OK);
@@ -265,6 +268,7 @@ void TransferComplete_CallBack_FS(void)
   */
 void HalfTransfer_CallBack_FS(void)
 {
+	uart2_print("HalfTransfer_CallBack_FS_In\r\n");
   /* USER CODE BEGIN 8 */
   USBD_AUDIO_Sync(&hUsbDeviceFS, AUDIO_OFFSET_HALF);
   /* USER CODE END 8 */

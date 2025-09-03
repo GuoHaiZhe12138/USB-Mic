@@ -46,3 +46,15 @@ stm32f411\usbd_audio.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex
 stm32f411\usbd_audio.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h
 stm32f411\usbd_audio.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h
 stm32f411\usbd_audio.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h
+stm32f411\usbd_audio.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+stm32f411\usbd_audio.o: ../Core/Inc/myfreertos.h
+stm32f411\usbd_audio.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+stm32f411\usbd_audio.o: ../Core/Inc/FreeRTOSConfig.h
+stm32f411\usbd_audio.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+stm32f411\usbd_audio.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+stm32f411\usbd_audio.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+stm32f411\usbd_audio.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+stm32f411\usbd_audio.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+stm32f411\usbd_audio.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
+stm32f411\usbd_audio.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+stm32f411\usbd_audio.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h

@@ -1950,6 +1950,10 @@ static void I2S_Receive_IT(I2S_HandleTypeDef *hi2s)
   hi2s->pRxBuffPtr++;
   hi2s->RxXferCount--;
 
+  extern void uart2_print_num(uint32_t num);
+	extern void uart2_print(const char *str);
+	uart2_print("RxXferCount:");
+  uart2_print_num(hi2s->RxXferCount);
   if (hi2s->RxXferCount == 0U)
   {
     /* Disable RXNE and ERR interrupt */

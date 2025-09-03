@@ -37,7 +37,7 @@ extern "C" {
   * @{
   */
 #define AUDIO_IN_EP          0x81  					/* IN endpoint */
-#define AUDIO_IN_PACKET      ((48*3*1)/1000)        /* 48kHz, 24bit, 1ch,package_length define */
+#define AUDIO_IN_PACKET      96        /* 48kHz, 16bit, 1ch,package_length define */
 #define AUDIO_IN_FREQ 		 48000U  			    /* 48kHz frequ */
 
 /** @defgroup USBD_AUDIO_Exported_Defines

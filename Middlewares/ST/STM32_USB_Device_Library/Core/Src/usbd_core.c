@@ -673,6 +673,8 @@ USBD_StatusTypeDef USBD_LL_DataOutStage(USBD_HandleTypeDef *pdev,
   return USBD_OK;
 }
 
+extern void uart2_print(const char *str);
+extern void uart2_print_num(uint32_t num);
 /**
   * @brief  USBD_LL_DataInStage
   *         Handle data in stage
@@ -689,6 +691,9 @@ USBD_StatusTypeDef USBD_LL_DataInStage(USBD_HandleTypeDef *pdev,
   uint8_t idx;
 
   UNUSED(pdata);
+	uart2_print("epnum:");
+	uart2_print_num(epnum);
+	uart2_print("\r\n");
 
   if (epnum == 0U)
   {

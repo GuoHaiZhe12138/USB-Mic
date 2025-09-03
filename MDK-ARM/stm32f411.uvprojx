@@ -420,6 +420,11 @@
               <FileType>5</FileType>
               <FilePath>..\Core\Inc\myfreertos.h</FilePath>
             </File>
+            <File>
+              <FileName>FreeRTOSConfig.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Core\Inc\FreeRTOSConfig.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

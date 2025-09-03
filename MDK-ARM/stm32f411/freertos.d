@@ -57,3 +57,4 @@ stm32f411\freertos.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_i
 stm32f411\freertos.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h
 stm32f411\freertos.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h
 stm32f411\freertos.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h
+stm32f411\freertos.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
